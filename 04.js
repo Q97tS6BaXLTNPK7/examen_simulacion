@@ -4,7 +4,7 @@
   código dentro de las funciones ya definidas. 
   No comentar la funcion 
 */
-
+console.log(numeroSimetrico(11711))
 function numeroSimetrico(num) {
   // La funcion llamada 'numeroSimetrico' recibe como argumento un numero entero 'num'
   // Esta devuelve true o false dependiendo de si el número es simétrico o no. 
@@ -13,6 +13,12 @@ function numeroSimetrico(num) {
   // numeroSimetrico(11711) devuelve true
 
   // Tu código:
+  let numInverso=num.toString().split("").reverse("").join("");
+ if (num == numInverso ){
+    return true;
+  }else{
+    return false;
+  }
 
 }
 
